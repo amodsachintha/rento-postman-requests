@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "9f4710a7-f18e-462d-a382-6834443d93a7",
+		"name": "Rento File Upload",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Process",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMDAuMjQuMzIuMTE0XC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY0NDgyMDQxLCJuYmYiOjE1NjQ0ODIwNDEsImp0aSI6Im5WRklvOFF4aXJSMElFRDAiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wLWPKi91gV7Om-QIoApTy-wjy96OBYCEp2ton-OAr3I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "filepond",
+							"value": null,
+							"type": "file"
+						}
+					]
+				},
+				"url": {
+					"raw": "100.24.32.114/api/files/process",
+					"host": [
+						"100",
+						"24",
+						"32",
+						"114"
+					],
+					"path": [
+						"api",
+						"files",
+						"process"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMDAuMjQuMzIuMTE0XC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY0NDgyMDQxLCJuYmYiOjE1NjQ0ODIwNDEsImp0aSI6Im5WRklvOFF4aXJSMElFRDAiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wLWPKi91gV7Om-QIoApTy-wjy96OBYCEp2ton-OAr3I",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "604e41f4dc9d4b84860032dd711b0b14-phpODxryN.jpg"
+				},
+				"url": {
+					"raw": "100.24.32.114/api/files/delete",
+					"host": [
+						"100",
+						"24",
+						"32",
+						"114"
+					],
+					"path": [
+						"api",
+						"files",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

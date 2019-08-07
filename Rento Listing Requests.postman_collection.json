@@ -1,0 +1,370 @@
+{
+	"info": {
+		"_postman_id": "e7ff0ebe-73aa-40f2-b027-d49fa7adadff",
+		"name": "Rento Listing Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User's Listings",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/listings",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A User's Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/listings/5",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create New Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "vehicle_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "pickup_location_lat",
+							"value": "43.555653",
+							"type": "text"
+						},
+						{
+							"key": "pickup_location_lng",
+							"value": "-75.445537",
+							"type": "text"
+						},
+						{
+							"key": "dropoff_location_lat",
+							"value": "23.557789",
+							"type": "text"
+						},
+						{
+							"key": "dropoff_location_lng",
+							"value": "-33.555353",
+							"type": "text"
+						},
+						{
+							"key": "advance_notice_time",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "shortest_trip_duration",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "longest_trip_duration",
+							"value": "72",
+							"type": "text"
+						},
+						{
+							"key": "free_delivery",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "business_class",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "daily_rate",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "auto_daily_rate",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "delivery_details",
+							"value": "test test",
+							"type": "text"
+						},
+						{
+							"key": "guidelines",
+							"value": "test test test test",
+							"type": "text"
+						},
+						{
+							"key": "additional_distance_charge",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "km_per_day",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "km_per_week",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "km_per_month",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api.rento.com/api/listings",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/x-www-form-urlencoded"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "vehicle_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "pickup_location_lat",
+							"value": "43.555653",
+							"type": "text"
+						},
+						{
+							"key": "pickup_location_lng",
+							"value": "-75.445537",
+							"type": "text"
+						},
+						{
+							"key": "dropoff_location_lat",
+							"value": "23.557789",
+							"type": "text"
+						},
+						{
+							"key": "dropoff_location_lng",
+							"value": "-33.555353",
+							"type": "text"
+						},
+						{
+							"key": "advance_notice_time",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "shortest_trip_duration",
+							"value": "24",
+							"type": "text"
+						},
+						{
+							"key": "longest_trip_duration",
+							"value": "72",
+							"type": "text"
+						},
+						{
+							"key": "free_delivery",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "business_class",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "daily_rate",
+							"value": "1200",
+							"type": "text"
+						},
+						{
+							"key": "auto_daily_rate",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "delivery_details",
+							"value": "test test",
+							"type": "text"
+						},
+						{
+							"key": "guidelines",
+							"value": "test test test test",
+							"type": "text"
+						},
+						{
+							"key": "additional_distance_charge",
+							"value": "60",
+							"type": "text"
+						},
+						{
+							"key": "km_per_day",
+							"value": "1000",
+							"type": "text"
+						},
+						{
+							"key": "km_per_week",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "km_per_month",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "api.rento.com/api/listings/4",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Listing",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/listings/4",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

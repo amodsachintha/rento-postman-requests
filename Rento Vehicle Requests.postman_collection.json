@@ -1,0 +1,404 @@
+{
+	"info": {
+		"_postman_id": "502e4de1-08d4-409f-b926-de65c13ab6ad",
+		"name": "Rento Vehicle Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "A user's Vehicles",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/vehicles",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "A user's Vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/vehicles/4",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehicles",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new Vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "insurance_cover_type",
+							"value": "FULL",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_year_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_make_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "market_value_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "insurance_provider_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_model_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "leasing_company_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "plate_number",
+							"value": "AAC-2232",
+							"type": "text"
+						},
+						{
+							"key": "chassis_number",
+							"value": "224242535",
+							"type": "text"
+						},
+						{
+							"key": "absolute_owner",
+							"value": "Jogen Dieo",
+							"type": "text"
+						},
+						{
+							"key": "transmission",
+							"value": "MANUAL",
+							"type": "text"
+						},
+						{
+							"key": "current_odometer_reading",
+							"value": "33435",
+							"type": "text"
+						},
+						{
+							"key": "is_personal",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "As previously discussed, some actions like create may not require a model instance. In these situations, you should pass a class name to the authorize method. The class name will be used to determine which policy to use when authorizing the action:",
+							"type": "text"
+						},
+						{
+							"key": "fuel_type",
+							"value": "Petrol",
+							"type": "text"
+						},
+						{
+							"key": "fuel_grade",
+							"value": "STANDARD",
+							"type": "text"
+						},
+						{
+							"key": "mpg",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "seats",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "doors",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "api.rento.com/api/vehicles",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehicles"
+					]
+				},
+				"description": "Creates and attach new Vehicle to the authenticated user"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "insurance_cover_type",
+							"value": "FULL",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_year_id",
+							"value": "7",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_make_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "market_value_id",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "insurance_provider_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "vehicle_model_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "leasing_company_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "plate_number",
+							"value": "AAC-2232",
+							"type": "text"
+						},
+						{
+							"key": "chassis_number",
+							"value": "224242535",
+							"type": "text"
+						},
+						{
+							"key": "absolute_owner",
+							"value": "Jogen Dieo",
+							"type": "text"
+						},
+						{
+							"key": "transmission",
+							"value": "MANUAL",
+							"type": "text"
+						},
+						{
+							"key": "current_odometer_reading",
+							"value": "33435",
+							"type": "text"
+						},
+						{
+							"key": "is_personal",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "As previously discussed, some actions like create may not require a model instance. In these situations, you should pass a class name to the authorize method. The class name will be used to determine which policy to use when authorizing the action:",
+							"type": "text"
+						},
+						{
+							"key": "fuel_type",
+							"value": "Petrol",
+							"type": "text"
+						},
+						{
+							"key": "fuel_grade",
+							"value": "STANDARD",
+							"type": "text"
+						},
+						{
+							"key": "mpg",
+							"value": "15",
+							"type": "text"
+						},
+						{
+							"key": "seats",
+							"value": "4",
+							"type": "text"
+						},
+						{
+							"key": "doors",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "api.rento.com/api/vehicles/1",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehicles",
+						"1"
+					]
+				},
+				"description": "Creates and attach new Vehicle to the authenticated user"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Vehicle",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/vehicles/4",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"vehicles",
+						"4"
+					]
+				},
+				"description": "Vehicle and any listing associated will be soft deleted"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "ef95c54b-c49a-4bce-b375-2c8f5d368eb1",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "a9be3fe8-8cac-4cb3-b9ca-ea91f54feb69",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
