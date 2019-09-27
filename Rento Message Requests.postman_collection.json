@@ -1,0 +1,123 @@
+{
+	"info": {
+		"_postman_id": "c2810130-e00b-41ba-aac8-8a225cc6669a",
+		"name": "Rento Message Requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET messages for trip",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY5NTc4Mjc1LCJuYmYiOjE1Njk1NzgyNzUsImp0aSI6Ino3bm9SYjZoTkdCNXhNcW0iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.n6QMWqZO4Tzz9f-YkuvuPtcuRac8XPu9oLtJz8hliYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/trips/1/messages",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET a message from a trip",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY5NTc4Mjc1LCJuYmYiOjE1Njk1NzgyNzUsImp0aSI6Ino3bm9SYjZoTkdCNXhNcW0iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.n6QMWqZO4Tzz9f-YkuvuPtcuRac8XPu9oLtJz8hliYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/trips/1/messages/1",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"1",
+						"messages",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST a message for trip",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY5NTc4Mjc1LCJuYmYiOjE1Njk1NzgyNzUsImp0aSI6Ino3bm9SYjZoTkdCNXhNcW0iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.n6QMWqZO4Tzz9f-YkuvuPtcuRac8XPu9oLtJz8hliYw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "content",
+							"value": "dummy lorem ipsum text for testing",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "api.rento.com/api/trips/1/messages",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
