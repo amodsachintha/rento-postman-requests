@@ -1,0 +1,119 @@
+{
+	"info": {
+		"_postman_id": "1f95aab8-51c9-425a-9233-7800254c1fbd",
+		"name": "Rento Payments",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Add Card Link",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyODUyMTgyLCJuYmYiOjE1NzI4NTIxODIsImp0aSI6IlRmQ0Jhb2dCck1QZURDMTAiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.xWkIJx8XwfhGym3hYVz9SaA9w7-XJF_gdVfE5OG_DVg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/payments/getAddCardLink",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"payments",
+						"getAddCardLink"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Cards",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyODUyMTgyLCJuYmYiOjE1NzI4NTIxODIsImp0aSI6IlRmQ0Jhb2dCck1QZURDMTAiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.xWkIJx8XwfhGym3hYVz9SaA9w7-XJF_gdVfE5OG_DVg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/payments/listCards",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"payments",
+						"listCards"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Card",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyODUyMTgyLCJuYmYiOjE1NzI4NTIxODIsImp0aSI6IlRmQ0Jhb2dCck1QZURDMTAiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.xWkIJx8XwfhGym3hYVz9SaA9w7-XJF_gdVfE5OG_DVg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"card_id\": 1286\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/payments/deleteCard",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"payments",
+						"deleteCard"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
