@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "c8d0bf00-eb88-4a40-ba9d-6c60d5d71807",
+		"name": "Rento FCM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Store Token (Client Side)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyODk0ODE2LCJuYmYiOjE1NzI4OTQ4MTYsImp0aSI6IkcxdlRpdHBDUTB1YmFaaWoiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2uoswjpAQy-oAL2xKwmintgpsbu1Mcvd_nSaIIAOP7o",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token\": \"c6aWUxm9biiU_QQQoZkcMW:APA91bGjk5oJlOZubuHHJPgXT5Wnr7IdgcGhxSKb8KrCb6FmPLCkaAsdCDngt2GSyZD97I5emCbDNc2mJrCk2luTWTKf9boxr3QiO0x6fGJv21p4-UQ0Zuk0vml1T2V9pkbKT8kK8UNH\",\n    \"device_name\": \"Samsung S10\",\n    \"imei\": \"22425r25235252525252\",\n    \"os\": \"web\",\n    \"meta\": \"details about the device.. (uptime, kernel versions etc.)\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/fcm/storeToken",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"fcm",
+						"storeToken"
+					]
+				},
+				"description": "only `token` is **required**"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
