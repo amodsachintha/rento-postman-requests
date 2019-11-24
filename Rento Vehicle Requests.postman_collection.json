@@ -13,7 +13,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -43,7 +43,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -51,7 +51,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "api.rento.com/api/vehicles/4",
+					"raw": "api.rento.com/api/vehicles/1",
 					"host": [
 						"api",
 						"rento",
@@ -60,7 +60,7 @@
 					"path": [
 						"api",
 						"vehicles",
-						"4"
+						"1"
 					]
 				}
 			},
@@ -74,117 +74,28 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
 				},
 				"method": "POST",
-				"header": [],
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "insurance_cover_type",
-							"value": "FULL",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_year_id",
-							"value": "7",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_make_id",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_type_id",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "market_value_id",
-							"value": "4",
-							"type": "text"
-						},
-						{
-							"key": "insurance_provider_id",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_model_id",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "leasing_company_id",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "plate_number",
-							"value": "AAC-2232",
-							"type": "text"
-						},
-						{
-							"key": "chassis_number",
-							"value": "224242535",
-							"type": "text"
-						},
-						{
-							"key": "absolute_owner",
-							"value": "Jogen Dieo",
-							"type": "text"
-						},
-						{
-							"key": "transmission",
-							"value": "MANUAL",
-							"type": "text"
-						},
-						{
-							"key": "current_odometer_reading",
-							"value": "33435",
-							"type": "text"
-						},
-						{
-							"key": "is_personal",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "description",
-							"value": "As previously discussed, some actions like create may not require a model instance. In these situations, you should pass a class name to the authorize method. The class name will be used to determine which policy to use when authorizing the action:",
-							"type": "text"
-						},
-						{
-							"key": "fuel_type",
-							"value": "Petrol",
-							"type": "text"
-						},
-						{
-							"key": "fuel_grade",
-							"value": "STANDARD",
-							"type": "text"
-						},
-						{
-							"key": "mpg",
-							"value": "15",
-							"type": "text"
-						},
-						{
-							"key": "seats",
-							"value": "4",
-							"type": "text"
-						},
-						{
-							"key": "doors",
-							"value": "4",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\n    \"insurance_cover_type\": \"FULL\",\n    \"vehicle_year_id\": 7,\n    \"vehicle_make_id\": 2,\n    \"vehicle_type_id\": 1,\n    \"market_value_id\": 4,\n    \"insurance_provider_id\": 2,\n    \"vehicle_model_id\": 2,\n    \"leasing_company_id\": 1,\n    \"plate_number\": \"AAC-2232\",\n    \"chassis_number\": \"224242535\",\n    \"absolute_owner\": \"Jogen Dieo\",\n    \"transmission\": \"MANUAL\",\n    \"current_odometer_reading\": \"33435\",\n    \"is_personal\": 1,\n    \"description\": \"As previously discussed, some actions like create may not require a model instance. In these situations, you should pass a class name to the authorize method. The class name will be used to determine which policy to use when authorizing the action\",\n    \"fuel_type\": \"Petrol\",\n    \"fuel_grade\": \"STANDARD\",\n    \"mpg\": 15,\n    \"seats\": 4,\n    \"doors\": 4,\n    \"features\": [\n        1,\n        5,\n        3,\n        6\n    ],\n    \"images\": [\n        \"8d84965ea70349dcae36fc7564f9216b-php4nTc6z.jpg\",\n        \"861d0a71c02543f3a5c1f3124193016f-phpm0Z9qA.jpg\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "api.rento.com/api/vehicles",
@@ -220,114 +131,18 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "insurance_cover_type",
-							"value": "FULL",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_year_id",
-							"value": "7",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_make_id",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_type_id",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "market_value_id",
-							"value": "4",
-							"type": "text"
-						},
-						{
-							"key": "insurance_provider_id",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "vehicle_model_id",
-							"value": "2",
-							"type": "text"
-						},
-						{
-							"key": "leasing_company_id",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "plate_number",
-							"value": "AAC-2232",
-							"type": "text"
-						},
-						{
-							"key": "chassis_number",
-							"value": "224242535",
-							"type": "text"
-						},
-						{
-							"key": "absolute_owner",
-							"value": "Jogen Dieo",
-							"type": "text"
-						},
-						{
-							"key": "transmission",
-							"value": "MANUAL",
-							"type": "text"
-						},
-						{
-							"key": "current_odometer_reading",
-							"value": "33435",
-							"type": "text"
-						},
-						{
-							"key": "is_personal",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "description",
-							"value": "As previously discussed, some actions like create may not require a model instance. In these situations, you should pass a class name to the authorize method. The class name will be used to determine which policy to use when authorizing the action:",
-							"type": "text"
-						},
-						{
-							"key": "fuel_type",
-							"value": "Petrol",
-							"type": "text"
-						},
-						{
-							"key": "fuel_grade",
-							"value": "STANDARD",
-							"type": "text"
-						},
-						{
-							"key": "mpg",
-							"value": "15",
-							"type": "text"
-						},
-						{
-							"key": "seats",
-							"value": "4",
-							"type": "text"
-						},
-						{
-							"key": "doors",
-							"value": "4",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\n    \"insurance_cover_type\": \"FULL\",\n    \"vehicle_year_id\": 7,\n    \"vehicle_make_id\": 2,\n    \"vehicle_type_id\": 1,\n    \"market_value_id\": 4,\n    \"insurance_provider_id\": 2,\n    \"vehicle_model_id\": 2,\n    \"leasing_company_id\": 1,\n    \"plate_number\": \"AAC-2232\",\n    \"chassis_number\": \"224242535\",\n    \"absolute_owner\": \"Jogen Dieo\",\n    \"transmission\": \"MANUAL\",\n    \"current_odometer_reading\": \"33435\",\n    \"is_personal\": 1,\n    \"description\": \"As previously discussed, some actions like create may not require a model instance. In these situations, you should pass a class name to the authorize method. The class name will be used to determine which policy to use when authorizing the action\",\n    \"fuel_type\": \"Petrol\",\n    \"fuel_grade\": \"STANDARD\",\n    \"mpg\": 15,\n    \"seats\": 4,\n    \"doors\": 4,\n    \"features\": [\n        1,\n        5,\n        3,\n        6\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "api.rento.com/api/vehicles/1",
