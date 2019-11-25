@@ -1,0 +1,212 @@
+{
+	"info": {
+		"_postman_id": "24635a1c-5075-4e01-897a-c816f5a3ece2",
+		"name": "Rento Search Listings",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/search?radius=100000000&lat=43.545653&lng=-75.42442&daily_rate_lower=1000&daily_rate_upper=1200&rating=1.5&features[]=1&features[]=3",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"search"
+					],
+					"query": [
+						{
+							"key": "radius",
+							"value": "100000000"
+						},
+						{
+							"key": "search_id",
+							"value": "search_key_5ddaa70bb330d",
+							"description": "will be searched first if not null",
+							"disabled": true
+						},
+						{
+							"key": "place_id",
+							"value": "ChIJxXFnGttW4joRNnWaq0TjYyw",
+							"description": "if no search_id then place_id is queried from Google API",
+							"disabled": true
+						},
+						{
+							"key": "lat",
+							"value": "43.545653",
+							"description": "Search by user Location"
+						},
+						{
+							"key": "lng",
+							"value": "-75.42442"
+						},
+						{
+							"key": "session_token",
+							"value": "5dda7c82a00e0",
+							"disabled": true
+						},
+						{
+							"key": "make_id",
+							"value": "2",
+							"description": "make_id",
+							"disabled": true
+						},
+						{
+							"key": "model_id",
+							"value": "2",
+							"description": "model_id",
+							"disabled": true
+						},
+						{
+							"key": "year_id",
+							"value": "7",
+							"disabled": true
+						},
+						{
+							"key": "transmission",
+							"value": "MANUAL",
+							"description": "AUTO/MANUAL",
+							"disabled": true
+						},
+						{
+							"key": "fuel_type",
+							"value": "PETROL",
+							"description": "PETROL/DIESEL",
+							"disabled": true
+						},
+						{
+							"key": "fuel_grade",
+							"value": "STANDARD",
+							"description": "STANDARD/PREMIUM",
+							"disabled": true
+						},
+						{
+							"key": "seats",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "doors",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "insurance_cover_type",
+							"value": "FULL",
+							"description": "THIRD-PARTY/FULL",
+							"disabled": true
+						},
+						{
+							"key": "daily_rate_lower",
+							"value": "1000",
+							"description": "Daily rate lower limit in Rs."
+						},
+						{
+							"key": "daily_rate_upper",
+							"value": "1200",
+							"description": "Daily rate upper limit in Rs."
+						},
+						{
+							"key": "shortest_trip_duration",
+							"value": "24",
+							"description": "duration in HOURS",
+							"disabled": true
+						},
+						{
+							"key": "longest_trip_duration",
+							"value": "72",
+							"description": "duration in HOURS",
+							"disabled": true
+						},
+						{
+							"key": "free_delivery",
+							"value": "1",
+							"description": "1 or 0",
+							"disabled": true
+						},
+						{
+							"key": "business_class",
+							"value": "1",
+							"description": "1 or 0",
+							"disabled": true
+						},
+						{
+							"key": "rating",
+							"value": "1.5",
+							"description": "1 - 5"
+						},
+						{
+							"key": "features[]",
+							"value": "1"
+						},
+						{
+							"key": "features[]",
+							"value": "4",
+							"disabled": true
+						},
+						{
+							"key": "features[]",
+							"value": "3"
+						},
+						{
+							"key": "features[]",
+							"value": "6",
+							"disabled": true
+						}
+					]
+				},
+				"description": "Token not required"
+			},
+			"response": []
+		},
+		{
+			"name": "Autocomplete Query",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/search/autocomplete?input=sliit&lat=6.9160753&lng=79.9753734",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"search",
+						"autocomplete"
+					],
+					"query": [
+						{
+							"key": "input",
+							"value": "sliit"
+						},
+						{
+							"key": "lat",
+							"value": "6.9160753"
+						},
+						{
+							"key": "lng",
+							"value": "79.9753734"
+						},
+						{
+							"key": "session_token",
+							"value": "5dda6b0e53bab",
+							"disabled": true
+						}
+					]
+				},
+				"description": "for getting the place_id"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
