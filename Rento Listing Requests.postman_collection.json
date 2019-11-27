@@ -74,7 +74,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -84,106 +84,18 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "urlencoded",
-					"urlencoded": [
-						{
-							"key": "vehicle_id",
-							"value": "4",
-							"type": "text"
-						},
-						{
-							"key": "pickup_location_lat",
-							"value": "43.555653",
-							"type": "text"
-						},
-						{
-							"key": "pickup_location_lng",
-							"value": "-75.445537",
-							"type": "text"
-						},
-						{
-							"key": "dropoff_location_lat",
-							"value": "23.557789",
-							"type": "text"
-						},
-						{
-							"key": "dropoff_location_lng",
-							"value": "-33.555353",
-							"type": "text"
-						},
-						{
-							"key": "advance_notice_time",
-							"value": "12",
-							"type": "text"
-						},
-						{
-							"key": "shortest_trip_duration",
-							"value": "24",
-							"type": "text"
-						},
-						{
-							"key": "longest_trip_duration",
-							"value": "72",
-							"type": "text"
-						},
-						{
-							"key": "free_delivery",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "business_class",
-							"value": "1",
-							"type": "text"
-						},
-						{
-							"key": "daily_rate",
-							"value": "1200",
-							"type": "text"
-						},
-						{
-							"key": "auto_daily_rate",
-							"value": "0",
-							"type": "text"
-						},
-						{
-							"key": "delivery_details",
-							"value": "test test",
-							"type": "text"
-						},
-						{
-							"key": "guidelines",
-							"value": "test test test test",
-							"type": "text"
-						},
-						{
-							"key": "additional_distance_charge",
-							"value": "60",
-							"type": "text"
-						},
-						{
-							"key": "km_per_day",
-							"value": "1000",
-							"type": "text"
-						},
-						{
-							"key": "km_per_week",
-							"value": "",
-							"type": "text",
-							"disabled": true
-						},
-						{
-							"key": "km_per_month",
-							"value": "",
-							"type": "text",
-							"disabled": true
+					"mode": "raw",
+					"raw": "{\n    \"vehicle_id\": 4,\n    \"pickup_location_lat\": 43.555653,\n    \"pickup_location_lng\": -75.445537,\n    \"dropoff_location_lat\": 23.557789,\n    \"dropoff_location_lng\": -33.555353,\n    \"advance_notice_time\": 12,\n    \"shortest_trip_duration\": 24,\n    \"longest_trip_duration\": 72,\n    \"free_delivery\": 1,\n    \"business_class\": 1,\n    \"daily_rate\": 1200,\n    \"auto_daily_rate\": 0,\n    \"delivery_details\": \"test test\",\n    \"guidelines\": \"test test test test\",\n    \"additional_distance_charge\": 60,\n    \"km_per_day\": 1000,\n    \"pickup_locations\": [\n    \t{\n       \t\"lat\":43.5544,\n        \"lng\":-72.4424,\n        \"fee\":350\n       },\n       {\n       \t\"lat\":43.3544,\n        \"lng\":-72.4424,\n        \"fee\":350\n       },\n       {\n       \t\"lat\":43.5544,\n        \"lng\":-72.4424,\n        \"fee\":350\n       },\n       {\n       \t\"lat\":43.3544,\n        \"lng\":-72.4424\n       },\n       {\n       \t\"lat\":43.5544,\n        \"lng\":-72.4424\n       },\n       {\n       \t\"lat\":43.3544,\n        \"lng\":-72.4424\n       }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "api.rento.com/api/listings",

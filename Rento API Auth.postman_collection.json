@@ -71,7 +71,7 @@
 						},
 						{
 							"key": "phone",
-							"value": "774840329",
+							"value": "0774840329",
 							"type": "text"
 						},
 						{
@@ -82,6 +82,11 @@
 						{
 							"key": "password_confirmation",
 							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "country_id",
+							"value": "1",
 							"type": "text"
 						}
 					]
@@ -110,7 +115,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYyNjE4NzQ3LCJuYmYiOjE1NjI2MTg3NDcsImp0aSI6IlNtWTRLSFJ2MVJPNHFGMjciLCJzdWIiOjIsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.rhs3UIelGLEqFm-4r0JQOjNBzDE7uAHQvxB-MmSf0bI",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBwLTAxLnJlbnRvLmxrXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyNjc5Mjc3LCJuYmYiOjE1NzI2NzkyNzcsImp0aSI6ImVwRTJmV29Yb3RMem8xa1MiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.em3nhmy5n7cmSb2gsctMSYQwWE48cfQEuW7J1gF3hFg",
 							"type": "string"
 						}
 					]
@@ -118,11 +123,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "api.rento.com/api/auth/me",
+					"raw": "https://app-01.rento.lk/api/auth/me",
+					"protocol": "https",
 					"host": [
-						"api",
+						"app-01",
 						"rento",
-						"com"
+						"lk"
 					],
 					"path": [
 						"api",
@@ -159,6 +165,128 @@
 						"api",
 						"auth",
 						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Verify Phone",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "phone",
+							"value": "0774840329",
+							"type": "text"
+						},
+						{
+							"key": "code",
+							"value": "29083",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "api.rento.com/api/auth/verify/phone",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"verify",
+						"phone"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retry Verification SMS",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"phone\":\"0774840329\",\n\t\"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/auth/verify/phone/retry",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"verify",
+						"phone",
+						"retry"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retry Verification Email",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"email\":\"amod077@gmail.com\",\n\t\"password\":\"password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/auth/verify/email/retry",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"verify",
+						"email",
+						"retry"
 					]
 				}
 			},

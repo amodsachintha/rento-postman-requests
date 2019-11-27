@@ -11,7 +11,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "api.rento.com/api/search?radius=100000000&lat=43.545653&lng=-75.42442&daily_rate_lower=1000&daily_rate_upper=1200&rating=1.5&features[]=1&features[]=3",
+					"raw": "api.rento.com/api/search?radius=1000000&lat=43.545653&lng=-75.42442&trip_start=2019-06-05 06:00:00&trip_end=2019-06-08 18:00:00",
 					"host": [
 						"api",
 						"rento",
@@ -24,7 +24,7 @@
 					"query": [
 						{
 							"key": "radius",
-							"value": "100000000"
+							"value": "1000000"
 						},
 						{
 							"key": "search_id",
@@ -46,6 +46,14 @@
 						{
 							"key": "lng",
 							"value": "-75.42442"
+						},
+						{
+							"key": "trip_start",
+							"value": "2019-06-05 06:00:00"
+						},
+						{
+							"key": "trip_end",
+							"value": "2019-06-08 18:00:00"
 						},
 						{
 							"key": "session_token",
@@ -106,12 +114,14 @@
 						{
 							"key": "daily_rate_lower",
 							"value": "1000",
-							"description": "Daily rate lower limit in Rs."
+							"description": "Daily rate lower limit in Rs.",
+							"disabled": true
 						},
 						{
 							"key": "daily_rate_upper",
 							"value": "1200",
-							"description": "Daily rate upper limit in Rs."
+							"description": "Daily rate upper limit in Rs.",
+							"disabled": true
 						},
 						{
 							"key": "shortest_trip_duration",
@@ -140,11 +150,13 @@
 						{
 							"key": "rating",
 							"value": "1.5",
-							"description": "1 - 5"
+							"description": "1 - 5",
+							"disabled": true
 						},
 						{
 							"key": "features[]",
-							"value": "1"
+							"value": "1",
+							"disabled": true
 						},
 						{
 							"key": "features[]",
@@ -153,7 +165,8 @@
 						},
 						{
 							"key": "features[]",
-							"value": "3"
+							"value": "3",
+							"disabled": true
 						},
 						{
 							"key": "features[]",
