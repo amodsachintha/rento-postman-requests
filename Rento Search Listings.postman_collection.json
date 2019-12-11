@@ -27,12 +27,6 @@
 							"value": "1000000"
 						},
 						{
-							"key": "search_id",
-							"value": "search_key_5ddaa70bb330d",
-							"description": "will be searched first if not null",
-							"disabled": true
-						},
-						{
 							"key": "place_id",
 							"value": "ChIJxXFnGttW4joRNnWaq0TjYyw",
 							"description": "if no search_id then place_id is queried from Google API",

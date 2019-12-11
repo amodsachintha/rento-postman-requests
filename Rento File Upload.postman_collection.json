@@ -13,7 +13,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC8xMDAuMjQuMzIuMTE0XC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY0NDgyMDQxLCJuYmYiOjE1NjQ0ODIwNDEsImp0aSI6Im5WRklvOFF4aXJSMElFRDAiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.wLWPKi91gV7Om-QIoApTy-wjy96OBYCEp2ton-OAr3I",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -32,18 +32,17 @@
 					"formdata": [
 						{
 							"key": "filepond",
-							"value": null,
-							"type": "file"
+							"type": "file",
+							"src": "/I:/phone/IMG_20180307_091231.jpg"
 						}
 					]
 				},
 				"url": {
-					"raw": "100.24.32.114/api/files/process",
+					"raw": "api.rento.com/api/files/process",
 					"host": [
-						"100",
-						"24",
-						"32",
-						"114"
+						"api",
+						"rento",
+						"com"
 					],
 					"path": [
 						"api",

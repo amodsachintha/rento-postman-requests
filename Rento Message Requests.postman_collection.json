@@ -13,7 +13,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTY5NTc4Mjc1LCJuYmYiOjE1Njk1NzgyNzUsImp0aSI6Ino3bm9SYjZoTkdCNXhNcW0iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.n6QMWqZO4Tzz9f-YkuvuPtcuRac8XPu9oLtJz8hliYw",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyODk0ODE2LCJuYmYiOjE1NzI4OTQ4MTYsImp0aSI6IkcxdlRpdHBDUTB1YmFaaWoiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2uoswjpAQy-oAL2xKwmintgpsbu1Mcvd_nSaIIAOP7o",
 							"type": "string"
 						}
 					]

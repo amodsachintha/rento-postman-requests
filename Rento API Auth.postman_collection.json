@@ -17,8 +17,14 @@
 					"mode": "formdata",
 					"formdata": [
 						{
+							"key": "email",
+							"value": "amod077@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
 							"key": "phone",
-							"value": "774840329",
+							"value": "0774840329",
 							"type": "text"
 						},
 						{

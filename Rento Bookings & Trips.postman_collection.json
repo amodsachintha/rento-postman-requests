@@ -1,0 +1,264 @@
+{
+	"info": {
+		"_postman_id": "5f88fe8a-2188-4605-9834-815b1c3fd31d",
+		"name": "Rento Bookings & Trips",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Trips (user)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/trips?status=COMPLETE&sort_by=created_at&sort_direction=DESC",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "COMPLETE",
+							"description": "trip status -> 'PENDING', 'ACTIVE', 'COMPLETE', 'CANCELLED'"
+						},
+						{
+							"key": "sort_by",
+							"value": "created_at",
+							"description": "'created_at', 'updated_at', 'trip_start', 'trip_end'"
+						},
+						{
+							"key": "sort_direction",
+							"value": "DESC",
+							"description": "'ASC', 'DESC'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Bookings (host)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/bookings?status=COMPLETE&sort_by=created_at&sort_direction=DESC",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "COMPLETE",
+							"description": "booking status -> 'PENDING', 'ACTIVE', 'COMPLETE', 'CANCELLED'"
+						},
+						{
+							"key": "sort_by",
+							"value": "created_at",
+							"description": "'created_at', 'updated_at', 'trip_start', 'trip_end'"
+						},
+						{
+							"key": "sort_direction",
+							"value": "DESC",
+							"description": "'ASC', 'DESC'"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Photos (User)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/trips/1/photos",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"1",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Photos (User)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"images\": [\n        \"r.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/trips/1/photos",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"1",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Photos (Host)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"images\": [\n        \"aefws.png\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.png\",\n        \"sfsfsf.jpg\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/bookings/1/photos",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						"1",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Photos (Host)",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/bookings/1/photos",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"bookings",
+						"1",
+						"photos"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

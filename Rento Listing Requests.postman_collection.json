@@ -6,6 +6,208 @@
 	},
 	"item": [
 		{
+			"name": "Extras",
+			"item": [
+				{
+					"name": "Store Extras",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"extras\": [\n        {\n            \"title\": \"Portable GPS\",\n            \"type\": \"ITEM\",\n            \"quantity\": 2,\n            \"description\": \"A GLONASS GPS Device with LED Screen\",\n            \"price\": 200,\n            \"cost_type\": \"PER_DAY\"\n        },\n        {\n            \"title\": \"Cooler\",\n            \"type\": \"ITEM\",\n            \"quantity\": 1,\n            \"description\": \"A 2x3x3 cooler ideal for storing drinks.\",\n            \"price\": 500,\n            \"cost_type\": \"PER_DAY\"\n        }\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/listings/1/extras",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"listings",
+								"1",
+								"extras"
+							]
+						},
+						"description": "Add extras after listing is **persisted**."
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Extras for Listing",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/listings/1/extras",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"listings",
+								"1",
+								"extras"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show an Extra for Listing ",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/listings/1/extras/1",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"listings",
+								"1",
+								"extras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update an Extra for Listing",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Post-trip cleaning\",\n    \"type\": \"SERVICE\",\n    \"quantity\": 1,\n    \"description\": \"Pay for a one-time cleaning of the vehicle after your journey.\",\n    \"price\": 500,\n    \"cost_type\": \"PER_TRIP\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/listings/1/extras/1",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"listings",
+								"1",
+								"extras",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete an Extra from Listing",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/listings/1/extras/4",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"listings",
+								"1",
+								"extras",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "User's Listings",
 			"request": {
 				"auth": {
@@ -13,7 +215,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -43,7 +245,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTYzNjg2MDU4LCJuYmYiOjE1NjM2ODYwNTgsImp0aSI6Ijc5Q1BXR0V0UEVmRVFzZDQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.bafAzSSkn8W1oKVIbWmzeJ6kRRHfu0ANcoLyZ4KmORk",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -90,7 +292,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"vehicle_id\": 4,\n    \"pickup_location_lat\": 43.555653,\n    \"pickup_location_lng\": -75.445537,\n    \"dropoff_location_lat\": 23.557789,\n    \"dropoff_location_lng\": -33.555353,\n    \"advance_notice_time\": 12,\n    \"shortest_trip_duration\": 24,\n    \"longest_trip_duration\": 72,\n    \"free_delivery\": 1,\n    \"business_class\": 1,\n    \"daily_rate\": 1200,\n    \"auto_daily_rate\": 0,\n    \"delivery_details\": \"test test\",\n    \"guidelines\": \"test test test test\",\n    \"additional_distance_charge\": 60,\n    \"km_per_day\": 1000,\n    \"pickup_locations\": [\n    \t{\n       \t\"lat\":43.5544,\n        \"lng\":-72.4424,\n        \"fee\":350\n       },\n       {\n       \t\"lat\":43.3544,\n        \"lng\":-72.4424,\n        \"fee\":350\n       },\n       {\n       \t\"lat\":43.5544,\n        \"lng\":-72.4424,\n        \"fee\":350\n       },\n       {\n       \t\"lat\":43.3544,\n        \"lng\":-72.4424\n       },\n       {\n       \t\"lat\":43.5544,\n        \"lng\":-72.4424\n       },\n       {\n       \t\"lat\":43.3544,\n        \"lng\":-72.4424\n       }\n    ]\n}",
+					"raw": "{\n    \"vehicle_id\": 4,\n    \"pickup_location_lat\": 43.555653,\n    \"pickup_location_lng\": -75.445537,\n    \"dropoff_location_lat\": 23.557789,\n    \"dropoff_location_lng\": -33.555353,\n    \"advance_notice_time\": 12,\n    \"shortest_trip_duration\": 24,\n    \"longest_trip_duration\": 72,\n    \"free_delivery\": 1,\n    \"business_class\": 1,\n    \"daily_rate\": 1200,\n    \"auto_daily_rate\": 0,\n    \"delivery_details\": \"test test\",\n    \"guidelines\": \"test test test test\",\n    \"additional_distance_charge\": 60,\n    \"km_per_day\": 1000,\n    \"pickup_locations\": [\n        {\n            \"lat\": 43.5544,\n            \"lng\": -72.4424,\n            \"fee\": 350\n        },\n        {\n            \"lat\": 43.3544,\n            \"lng\": -72.4424,\n            \"fee\": 350\n        },\n        {\n            \"lat\": 43.5544,\n            \"lng\": -72.4424,\n            \"fee\": 350\n        },\n        {\n            \"lat\": 43.3544,\n            \"lng\": -72.4424\n        },\n        {\n            \"lat\": 43.5544,\n            \"lng\": -72.4424\n        },\n        {\n            \"lat\": 43.3544,\n            \"lng\": -72.4424\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -273,6 +475,54 @@
 						"api",
 						"listings",
 						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Store Unavailable Date",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc1MTkzMDk3LCJuYmYiOjE1NzUxOTMwOTcsImp0aSI6ImpVSkQycFB1TjBmeEdONjgiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.hp6m7HSB1dabcMdQiVb6sP-IoEehcGBKyWknGIVWi5w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"start\": \"2020-01-20 09:00:00\",\n    \"end\": \"2020-01-22 09:00:00\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/listings/1/storeUnavailableDate",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings",
+						"1",
+						"storeUnavailableDate"
 					]
 				}
 			},

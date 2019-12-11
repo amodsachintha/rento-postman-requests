@@ -113,53 +113,6 @@
 				}
 			},
 			"response": []
-		},
-		{
-			"name": "Make Card Payment",
-			"request": {
-				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyODk0ODE2LCJuYmYiOjE1NzI4OTQ4MTYsImp0aSI6IkcxdlRpdHBDUTB1YmFaaWoiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.2uoswjpAQy-oAL2xKwmintgpsbu1Mcvd_nSaIIAOP7o",
-							"type": "string"
-						}
-					]
-				},
-				"method": "POST",
-				"header": [
-					{
-						"key": "Content-Type",
-						"name": "Content-Type",
-						"value": "application/json",
-						"type": "text"
-					}
-				],
-				"body": {
-					"mode": "raw",
-					"raw": "{\n    \"card_id\": 1288,\n    \"trip_id\": 1,\n    \"transaction_id\": 1\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "api.rento.com/api/payments/cardPayment",
-					"host": [
-						"api",
-						"rento",
-						"com"
-					],
-					"path": [
-						"api",
-						"payments",
-						"cardPayment"
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
