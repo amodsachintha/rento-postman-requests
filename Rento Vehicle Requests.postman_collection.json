@@ -6,6 +6,294 @@
 	},
 	"item": [
 		{
+			"name": "Vehicle License",
+			"item": [
+				{
+					"name": "Show Vehicle License",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/vehicles/1/license",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"1",
+								"license"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vehicle License",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"license_plate_number\": \"CCA-3345\",\n    \"license_provider\": \"Department of Motor Traffic\",\n    \"license_plate_province\": \"SP\",\n    \"image_front\": \"test.jpg\",\n    \"image_back\": \"test2.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/vehicles/1/license",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"1",
+								"license"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Vehicle License",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"license_plate_number\": \"CCA-3345\",\n    \"license_provider\": \"Department of Motor Traffic\",\n    \"license_plate_province\": \"SP\",\n    \"image_front\": \"test.jpg\",\n    \"image_back\": \"test2.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "api.rento.com/api/vehicles/1/license",
+									"host": [
+										"api",
+										"rento",
+										"com"
+									],
+									"path": [
+										"api",
+										"vehicles",
+										"1",
+										"license"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.8"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2019 10:48:46 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "100"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "96"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"data\": {\n        \"id\": 1,\n        \"vehicle_id\": 1,\n        \"license_plate_number\": \"CCA-3345\",\n        \"license_provider\": \"Department of Motor Traffic\",\n        \"license_plate_province\": \"SP\",\n        \"updated_at\": \"2019-12-15 16:18:46\",\n        \"images\": []\n    },\n    \"message\": \"OK\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Store Vehicle License",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"license_plate_number\": \"CCA-3345\",\n    \"license_provider\": \"Department of Motor Traffic\",\n    \"license_plate_province\": \"SP\",\n    \"image_front\": \"test.jpg\",\n    \"image_back\": \"test2.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/vehicles/1/license",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"vehicles",
+								"1",
+								"license"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Update Vehicle License",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"name": "Content-Type",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"license_plate_number\": \"CCA-3345\",\n    \"license_provider\": \"Department of Motor Traffic\",\n    \"license_plate_province\": \"SP\",\n    \"image_front\": \"test.jpg\",\n    \"image_back\": \"test2.jpg\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "api.rento.com/api/vehicles/1/license",
+									"host": [
+										"api",
+										"rento",
+										"com"
+									],
+									"path": [
+										"api",
+										"vehicles",
+										"1",
+										"license"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Server",
+									"value": "nginx/1.15.8"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sun, 15 Dec 2019 10:48:46 GMT"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "100"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "96"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"code\": 201,\n    \"data\": {\n        \"id\": 1,\n        \"vehicle_id\": 1,\n        \"license_plate_number\": \"CCA-3345\",\n        \"license_provider\": \"Department of Motor Traffic\",\n        \"license_plate_province\": \"SP\",\n        \"updated_at\": \"2019-12-15 16:18:46\",\n        \"images\": []\n    },\n    \"message\": \"OK\"\n}"
+						}
+					]
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "A user's Vehicles",
 			"request": {
 				"auth": {

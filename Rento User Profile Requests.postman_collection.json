@@ -6,6 +6,140 @@
 	},
 	"item": [
 		{
+			"name": "Driver License",
+			"item": [
+				{
+					"name": "Show License",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/users/1/driver_license",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"1",
+								"driver_license"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update License",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name_per_license\": \"Amod Sachintha\",\n    \"license_number\": \"2255563214d5\",\n    \"date_of_birth\": \"1995-02-10\",\n    \"date_of_issuance\": \"2014-04-06\",\n    \"date_of_expiration\": \"2026-04-06\",\n    \"country\": \"Sri Lanka\",\n    \"image_front\": \"1.jpg\",\n    \"image_back\": \"2.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/users/1/driver_license",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"1",
+								"driver_license"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store License",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name_per_license\": \"Amod Sachintha\",\n    \"license_number\": \"2255563214d5\",\n    \"date_of_birth\": \"1995-02-10\",\n    \"date_of_issuance\": \"2014-04-06\",\n    \"date_of_expiration\": \"2026-04-06\",\n    \"country\": \"Sri Lanka\",\n    \"image_front\": \"1.jpg\",\n    \"image_back\": \"2.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/users/1/driver_license",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"users",
+								"1",
+								"driver_license"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
 			"name": "Update Profile Details",
 			"request": {
 				"auth": {
@@ -132,7 +266,7 @@
 					}
 				},
 				"url": {
-					"raw": "api.rento.com/api/users/1/updatePassword",
+					"raw": "api.rento.com/api/users/1/password",
 					"host": [
 						"api",
 						"rento",
@@ -142,7 +276,7 @@
 						"api",
 						"users",
 						"1",
-						"updatePassword"
+						"password"
 					]
 				}
 			},

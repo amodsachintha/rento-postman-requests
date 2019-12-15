@@ -179,7 +179,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "api.rento.com/api/search/autocomplete?input=sliit&lat=6.9160753&lng=79.9753734",
+					"raw": "api.rento.com/api/search/autocomplete?input=sliit&lat=6.9160753&lng=79.9753734&session_token=5dda6b0e53bab",
 					"host": [
 						"api",
 						"rento",
@@ -205,8 +205,7 @@
 						},
 						{
 							"key": "session_token",
-							"value": "5dda6b0e53bab",
-							"disabled": true
+							"value": "5dda6b0e53bab"
 						}
 					]
 				},

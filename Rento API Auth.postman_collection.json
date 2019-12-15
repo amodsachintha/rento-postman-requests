@@ -121,7 +121,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBwLTAxLnJlbnRvLmxrXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTcyNjc5Mjc3LCJuYmYiOjE1NzI2NzkyNzcsImp0aSI6ImVwRTJmV29Yb3RMem8xa1MiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.em3nhmy5n7cmSb2gsctMSYQwWE48cfQEuW7J1gF3hFg",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
 							"type": "string"
 						}
 					]
@@ -129,12 +129,11 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "https://app-01.rento.lk/api/auth/me",
-					"protocol": "https",
+					"raw": "api.rento.com/api/auth/me",
 					"host": [
-						"app-01",
+						"api",
 						"rento",
-						"lk"
+						"com"
 					],
 					"path": [
 						"api",
