@@ -208,7 +208,7 @@
 			"protocolProfileBehavior": {}
 		},
 		{
-			"name": "User's Listings",
+			"name": "All Listings",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -238,7 +238,7 @@
 			"response": []
 		},
 		{
-			"name": "A User's Listing",
+			"name": "A Listing",
 			"request": {
 				"auth": {
 					"type": "bearer",
@@ -523,6 +523,38 @@
 						"listings",
 						"1",
 						"storeUnavailableDate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get listings by User ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc2NDA4MjA1LCJuYmYiOjE1NzY0MDgyMDUsImp0aSI6IlZPQU9xdmIyQXFsOEs1bjEiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Vl7hjr0BSd5oxNqsyzaCxzN4WrhCMzQtnhWtJAlAhEo",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/users/1/listings",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"1",
+						"listings"
 					]
 				}
 			},
