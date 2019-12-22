@@ -29,7 +29,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"listing_id\": 1,\n    \"trip_start\": \"2020-12-29 20:00:00\",\n    \"trip_end\": \"2020-12-31 20:00:00\",\n    \"protection_package_id\": 1,\n    \"pickup_location_lat\": 6.0402,\n    \"pickup_location_lng\": 80.220642,\n    \"extras\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        },\n        {\n            \"id\": 3,\n            \"quantity\": 2\n        },\n        {\n            \"id\": 5,\n            \"quantity\": 2\n        }\n    ]\n}",
+					"raw": "{\n    \"listing_id\": 1,\n    \"trip_start\": \"2020-12-29 20:00:00\",\n    \"trip_end\": \"2020-12-31 20:00:00\",\n    \"pickup_location_lat\": 6.0402,\n    \"pickup_location_lng\": 80.220642,\n    \"extras\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        },\n        {\n            \"id\": 3,\n            \"quantity\": 2\n        },\n        {\n            \"id\": 5,\n            \"quantity\": 2\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -155,7 +155,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"listing_id\": 1,\n    \"trip_start\": \"2020-02-27 09:00:00\",\n    \"trip_end\": \"2020-02-28 09:00:00\",\n    \"protection_package_id\": 4,\n    \"pre_checkout_message\": \"Testing 3\",\n    \"delivery_location_lat\": 6.914628,\n    \"delivery_location_lng\": 79.982037,\n    \"card_id\": 1327,\n    \"extras\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        },\n        {\n            \"id\": 3,\n            \"quantity\": 2\n        },\n        {\n            \"id\": 5,\n            \"quantity\": 2\n        }\n    ]\n}",
+					"raw": "{\n    \"listing_id\": 1,\n    \"trip_start\": \"2020-02-27 09:00:00\",\n    \"trip_end\": \"2020-02-28 09:00:00\",\n    \"pre_checkout_message\": \"Testing 3\",\n    \"delivery_location_lat\": 6.914628,\n    \"delivery_location_lng\": 79.982037,\n    \"card_id\": 1327,\n    \"extras\": [\n        {\n            \"id\": 1,\n            \"quantity\": 1\n        },\n        {\n            \"id\": 3,\n            \"quantity\": 2\n        },\n        {\n            \"id\": 5,\n            \"quantity\": 2\n        }\n    ]\n}",
 					"options": {
 						"raw": {
 							"language": "json"

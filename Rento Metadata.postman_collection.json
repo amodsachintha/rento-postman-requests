@@ -1,0 +1,199 @@
+{
+	"info": {
+		"_postman_id": "7c7cb58c-701d-420b-a8ea-efd67bf44020",
+		"name": "Rento Metadata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Vehicle Years",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getVehicleYears",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getVehicleYears"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicle Models",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getVehicleModels",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getVehicleModels"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicle Makes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getVehicleMakes",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getVehicleMakes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicle Types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getVehicleTypes",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getVehicleTypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Vehicle Features",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getVehicleFeatures",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getVehicleFeatures"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Leasing Companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getLeasingCompanies",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getLeasingCompanies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insurance Ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getInsuranceRatings",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getInsuranceRatings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Market Values",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getMarketValuesForVehicles",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getMarketValuesForVehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Insurance Providers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getInsuranceProviders",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getInsuranceProviders"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
