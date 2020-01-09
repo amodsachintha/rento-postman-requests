@@ -169,6 +169,70 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "START trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrIiwiaWF0IjoxNTc4MjM3NzA3LCJuYmYiOjE1NzgyMzc3MDcsImp0aSI6InAyWnRoaUYxU0lPNko4THkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._2c6ylOmM04wKEh518veHtaqzKdUsHNIvTxJqbt9z6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/bookings/1/start",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"1",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "END trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrIiwiaWF0IjoxNTc4MjM3NzA3LCJuYmYiOjE1NzgyMzc3MDcsImp0aSI6InAyWnRoaUYxU0lPNko4THkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._2c6ylOmM04wKEh518veHtaqzKdUsHNIvTxJqbt9z6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/bookings/1/end",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"1",
+								"end"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
@@ -350,9 +414,144 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "START trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrIiwiaWF0IjoxNTc4MjM3NzA3LCJuYmYiOjE1NzgyMzc3MDcsImp0aSI6InAyWnRoaUYxU0lPNko4THkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._2c6ylOmM04wKEh518veHtaqzKdUsHNIvTxJqbt9z6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/trips/1/start",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"trips",
+								"1",
+								"start"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "END trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrIiwiaWF0IjoxNTc4MjM3NzA3LCJuYmYiOjE1NzgyMzc3MDcsImp0aSI6InAyWnRoaUYxU0lPNko4THkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._2c6ylOmM04wKEh518veHtaqzKdUsHNIvTxJqbt9z6c",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "api.rento.com/api/trips/1/end",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"trips",
+								"1",
+								"end"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Get Transaction details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/trips/10/transaction?withCardPayments=1",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"10",
+						"transaction"
+					],
+					"query": [
+						{
+							"key": "withCardPayments",
+							"value": "1",
+							"description": "1 or 0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Extras for Trip",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/trips/1/extras",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"trips",
+						"1",
+						"extras"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
