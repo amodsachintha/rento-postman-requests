@@ -58,44 +58,18 @@
 					{
 						"key": "Content-Type",
 						"name": "Content-Type",
-						"value": "application/x-www-form-urlencoded",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "name",
-							"value": "Amod Sachintha",
-							"type": "text"
-						},
-						{
-							"key": "email",
-							"value": "amod077@gmail.com",
-							"type": "text"
-						},
-						{
-							"key": "phone",
-							"value": "0774840329",
-							"type": "text"
-						},
-						{
-							"key": "password",
-							"value": "password",
-							"type": "text"
-						},
-						{
-							"key": "password_confirmation",
-							"value": "password",
-							"type": "text"
-						},
-						{
-							"key": "country_id",
-							"value": "1",
-							"type": "text"
+					"mode": "raw",
+					"raw": "{\n    \"first_name\": \"Amod\",\n    \"last_name\": \"Sachintha\",\n    \"email\": \"amod077@gmail.com\",\n    \"phone\": \"0774840329\",\n    \"password\": \"password\",\n    \"password_confirmation\": \"password\",\n    \"country_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
 						}
-					]
+					}
 				},
 				"url": {
 					"raw": "api.rento.com/api/auth/register",
