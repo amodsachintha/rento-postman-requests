@@ -193,6 +193,27 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get Countries",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/meta/getCountries",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"meta",
+						"getCountries"
+					]
+				}
+			},
+			"response": []
 		}
 	],
 	"protocolProfileBehavior": {}
