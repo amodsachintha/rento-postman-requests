@@ -178,7 +178,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrIiwiaWF0IjoxNTc4MjM3NzA3LCJuYmYiOjE1NzgyMzc3MDcsImp0aSI6InAyWnRoaUYxU0lPNko4THkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ._2c6ylOmM04wKEh518veHtaqzKdUsHNIvTxJqbt9z6c",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc4NTMzMjMxLCJuYmYiOjE1Nzg1MzMyMzEsImp0aSI6ImpJc0dNOXBCcWNXTnNBSWciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.4FpZUjMAp0QnygKEfE3cl3gPw12c3xKjgdT_LK7Oe-w",
 									"type": "string"
 								}
 							]
@@ -229,6 +229,54 @@
 								"bookings",
 								"1",
 								"end"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Reject Trip",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc4OTQ1OTk5LCJuYmYiOjE1Nzg5NDU5OTksImp0aSI6IkFPVFRFM1B3bGM3emdhS04iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ey3dICLdBRjoChizA3RIdJbKCYq5OFQP9zWxPYoX9DY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"reason\":\"sorry bro! cant make it\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "api.rento.com/api/bookings/3/reject",
+							"host": [
+								"api",
+								"rento",
+								"com"
+							],
+							"path": [
+								"api",
+								"bookings",
+								"3",
+								"reject"
 							]
 						}
 					},

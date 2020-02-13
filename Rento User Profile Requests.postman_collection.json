@@ -16,7 +16,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwczpcL1wvYXBpLnJlbnRvLmxrXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTgxNjExMTk3LCJuYmYiOjE1ODE2MTExOTcsImp0aSI6IjRKWXhET2lZRkFHN0UycFQiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.Dnko1LV8KjvxLDwDroTusTvYEedmv11eAVKdXhKzkSM",
 									"type": "string"
 								}
 							]
@@ -24,7 +24,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "api.rento.com/api/users/1/driver_license",
+							"raw": "api.rento.com/api/users/1/license",
 							"host": [
 								"api",
 								"rento",
@@ -34,7 +34,7 @@
 								"api",
 								"users",
 								"1",
-								"driver_license"
+								"license"
 							]
 						}
 					},
@@ -72,7 +72,7 @@
 							}
 						},
 						"url": {
-							"raw": "api.rento.com/api/users/1/driver_license",
+							"raw": "api.rento.com/api/users/1/license",
 							"host": [
 								"api",
 								"rento",
@@ -82,7 +82,7 @@
 								"api",
 								"users",
 								"1",
-								"driver_license"
+								"license"
 							]
 						}
 					},
@@ -120,7 +120,7 @@
 							}
 						},
 						"url": {
-							"raw": "api.rento.com/api/users/1/driver_license",
+							"raw": "api.rento.com/api/users/1/license",
 							"host": [
 								"api",
 								"rento",
@@ -130,7 +130,7 @@
 								"api",
 								"users",
 								"1",
-								"driver_license"
+								"license"
 							]
 						}
 					},
@@ -163,7 +163,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"name\":\"Amod Sachintha\",\n\t\"stick_shift\":1,\n\t\"receive_updates\":1,\n\t\"receive_texts\":1\n}",
+					"raw": "{\n\t\"name\":\"Amod Sachintha\",\n\t\"stick_shift\":1,\n\t\"receive_updates\":1,\n\t\"receive_texts\":1,\n\t\"about\": \"safs g sg sg gsg sgsg sgwegb\",\n\t\"nic\": \"95041121V\",\n\t\"passport\": \"235235235\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -277,6 +277,54 @@
 						"users",
 						"1",
 						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create or Update User Address",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc4NTMzMjMxLCJuYmYiOjE1Nzg1MzMyMzEsImp0aSI6ImpJc0dNOXBCcWNXTnNBSWciLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.4FpZUjMAp0QnygKEfE3cl3gPw12c3xKjgdT_LK7Oe-w",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"street\": \"515A2\",\n    \"line_1\": \"Thalgasyaya\",\n    \"line_2\": \"Akmeemana\",\n    \"city\": \"Galle\",\n    \"province_state\": \"South\",\n    \"zip\": \"80090\",\n    \"country_id\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "api.rento.com/api/users/1/address",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"users",
+						"1",
+						"address"
 					]
 				}
 			},

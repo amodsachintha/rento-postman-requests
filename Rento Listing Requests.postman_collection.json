@@ -559,6 +559,38 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Booked Dates",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTc4OTQ1OTk5LCJuYmYiOjE1Nzg5NDU5OTksImp0aSI6IkFPVFRFM1B3bGM3emdhS04iLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.ey3dICLdBRjoChizA3RIdJbKCYq5OFQP9zWxPYoX9DY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/listings/1/bookedDates",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"listings",
+						"1",
+						"bookedDates"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
