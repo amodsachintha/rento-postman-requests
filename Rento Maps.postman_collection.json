@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "408a0bd3-603a-411f-ab81-345c073ca44c",
+		"name": "Rento Maps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAddressForCoordinate",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/maps/getAddressForCoordinate?lat=6.9160753&lng=79.9753734",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"maps",
+						"getAddressForCoordinate"
+					],
+					"query": [
+						{
+							"key": "lat",
+							"value": "6.9160753"
+						},
+						{
+							"key": "lng",
+							"value": "79.9753734"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCoordinateForPlaceID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/maps/getCoordinateForPlaceID?place_id=ChIJxXFnGttW4joRNnWaq0TjYyw",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"maps",
+						"getCoordinateForPlaceID"
+					],
+					"query": [
+						{
+							"key": "place_id",
+							"value": "ChIJxXFnGttW4joRNnWaq0TjYyw"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPlaceIDsForAddress",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGkucmVudG8uY29tXC9hcGlcL2F1dGhcL2xvZ2luIiwiaWF0IjoxNTczMjg5NDczLCJuYmYiOjE1NzMyODk0NzMsImp0aSI6ImdxSW5xS2JXcEtNRE9xcHkiLCJzdWIiOjEsInBydiI6IjIzYmQ1Yzg5NDlmNjAwYWRiMzllNzAxYzQwMDg3MmRiN2E1OTc2ZjcifQ.v0u8SGytTj-UhazNQ8bTQps_sXMZxfP0jgmxSAXkpM0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.rento.com/api/maps/getPlaceIDsForAddress?address=sliit&lat=6.9160753&lng=79.9753734",
+					"host": [
+						"api",
+						"rento",
+						"com"
+					],
+					"path": [
+						"api",
+						"maps",
+						"getPlaceIDsForAddress"
+					],
+					"query": [
+						{
+							"key": "address",
+							"value": "sliit"
+						},
+						{
+							"key": "lat",
+							"value": "6.9160753"
+						},
+						{
+							"key": "lng",
+							"value": "79.9753734"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
