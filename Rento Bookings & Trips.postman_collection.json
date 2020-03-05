@@ -82,7 +82,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"images\": [\n        \"aefws.png\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.png\",\n        \"sfsfsf.jpg\"\n    ]\n}",
+							"raw": "{\n    \"lat\": 6.9160753,\n    \"lng\": 79.9753734,\n    \"images\": [\n        \"aefws.png\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.png\",\n        \"sfsfsf.jpg\"\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -391,7 +391,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"images\": [\n        \"r.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\"\n    ]\n}",
+							"raw": "{\n    \"lat\": 6.9160753,\n    \"lng\": 79.9753734,\n    \"images\": [\n        \"r.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\",\n        \"aefws.jpg\",\n        \"sfsfsf.jpg\"\n    ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
